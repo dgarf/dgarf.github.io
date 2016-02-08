@@ -1,0 +1,17 @@
+body{
+	margin-top:10%;
+	font-family:"helvetica";
+}
+
+#fancy_letter{
+	font-size:72;
+	color:#ff69b4;
+}
+
+input[type="checkbox"]{
+	width:200px;
+	height:200px;
+
+	text-align:right;
+	margin-top:10%;
+}

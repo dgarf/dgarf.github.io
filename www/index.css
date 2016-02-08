@@ -1,0 +1,81 @@
+h1{
+	font-family:"helvetica";
+	color: #ff69b4;
+}
+
+body{
+	font-family:"helvetica";
+}
+
+.menu{
+	margin-top: 5%;
+}
+
+a{
+	color:#ff69b4;
+}
+
+
+#white_cat{
+	animation-name: slidew;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	z-index: -1;
+	
+	margin-left: 25%;
+	margin-bottom:0%;
+}
+
+@keyframes slidew {
+	from{
+		margin-left: 100%;
+		z-index: 2;
+	}
+	50%{
+		margin-left:25%;
+		z-index: 2;
+		
+	}
+	51%{
+		z-index:-1;
+	}
+	
+}
+
+#pink_cat{
+	animation-name: slidep;
+	animation-duration: 10s;
+	animation-delay:5s;
+	animation-iteration-count: infinite;
+	
+	margin-left: 100%;
+	margin-bottom:0%;
+	z-index:-1;
+
+	position: relative;
+	bottom: 435px;
+    
+}
+
+@keyframes slidep{
+	from{
+		margin-left: 100%;
+		z-index: 2
+
+	}
+	50%{
+		margin-left: 25%;
+		z-index: 2;
+
+	}
+	51%{
+		z-index:-1;
+	
+	}
+	to{
+		margin-left:25%;
+	}
+}
+
+
+
