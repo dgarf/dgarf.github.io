@@ -1,6 +1,33 @@
 /* resume stylesheet */
 
-h1{
-	text-align:center;
+body{
 	font-family:Helvetica;
+	margin-left: 100px
+
+}
+
+h1{
+	text-align:left;
+
+}
+
+h3{
+	color: #ff69b4
+}
+
+#doodle{
+	position: relative;
+	top: 200px;
+    right: -120px;
+}
+
+
+.pop{
+	font-weight: bold;
+}
+
+.description{
+	font-style:italic;
+	margin-top: 5px;	
+	margin-bottom: 4px;
 }
