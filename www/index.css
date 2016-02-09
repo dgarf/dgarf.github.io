@@ -1,14 +1,18 @@
 h1{
 	font-family:"helvetica";
-	color: #ff69b4;
+	
 }
 
 body{
 	font-family:"helvetica";
 }
 
-#menu{
+.menu{
 	margin-top: 5%;
+	margin-left: 3%;
+	margin-right: 3%;
+
+	font-size: 20px;
 }
 
 a{
