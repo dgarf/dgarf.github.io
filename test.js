@@ -7,12 +7,13 @@
   var photo = null;
   var startbutton = null;
 
-$(document).ready(function(){
-	startup();
+//$(document).ready(function(){
+	//startup();
 
-});
+//});
 
 function get_photo(){
+	startup();
 	
   navigator.mediaDevices.getUserMedia({ video: true, audio: false })
     .then(function(stream) {
@@ -57,13 +58,14 @@ function clearphoto() {
     var data = canvas.toDataURL('image/png');
     photo.setAttribute('src', data);
   }
-  
+
 function takepicture() {
+	console.log("took photo");
     var context = canvas.getContext('2d');
     if (width && height) {
       canvas.width = width;
       canvas.height = height;
-      context.drawImage(video, 0, 0, width, height);
+      context.drawImage(video, 0, 0, canvas.width, canvas.height);
     
       var data = canvas.toDataURL('image/png');
       photo.setAttribute('src', data);

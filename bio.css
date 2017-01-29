@@ -15,3 +15,12 @@ input[type="checkbox"]{
 	text-align:right;
 	margin-top:10%;
 }
+
+#canvas{
+	display: none;
+}
+
+#video{
+	display: none;
+}
+
