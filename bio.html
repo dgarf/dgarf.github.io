@@ -2,15 +2,34 @@
 <html>
 
 <head>
-	<title>The Story of Danny G.</title>
+	<title>About Danny G.</title>
 	<meta charset= "utf-8" />
 	<link href= "bio.css" rel="stylesheet" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="test.js"></script>
 </head>
 
 <body>
-	<span id="fancy_letter">H</span>ello. Danny Garfield is a film and media artist. Born in Philadelphia. and raised on the outskirts of the internet. Please take off your shoes and make yourself at home.
+	<p><span id="fancy_letter">H</span>ello. Danny Garfield is a film and media artist from Philadelphia. Looking forward– He is sure that we will all live in computers, but has mixed feelings about taking part. </p>
 
-	<p><input type="checkbox" name="ok">Click if you have removed shoes and gotten comfortable.</p>
+
+	<p>Feel free to <a href='mailto:dannyeligarfield@gmail.com'>email me</a></p>
+
+	<p>Just as Danny's childhood home, this website is a "shoes off house" so please remove them to continue.</p>
+
+	<p> <button type="button" onclick= "get_photo()">My shoes are off.</button> </p>
+
+	 <div class="camera">
+    	<video id="video">Video stream not available.</video>
+   		<button id="startbutton">Take photo</button>
+ 	</div>
+
+ 	 <canvas id="canvas"></canvas>
+
+  	<div class="output">
+    	<img id="photo" alt="The screen capture will appear in this box.">
+ 	</div>
+
 </body>
 
 </html>
