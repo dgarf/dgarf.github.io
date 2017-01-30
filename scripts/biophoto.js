@@ -1,5 +1,5 @@
- var width = 300;    // We will scale the photo width to this
-  var height = 300;     // This will be computed based on the input stream
+ var width = 900;    // We will scale the photo width to this
+  var height = 900;     // This will be computed based on the input stream
 
   var streaming = false;
   var video = null;
