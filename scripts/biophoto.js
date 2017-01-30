@@ -7,15 +7,10 @@
   var photo = null;
   var startbutton = null;
 
-//$(document).ready(function(){
-	//startup();
-
-//});
-
-function get_photo(){
+$(document).ready(function(){
 	startup();
-	
-  navigator.mediaDevices.getUserMedia({ video: true, audio: false })
+
+	 navigator.mediaDevices.getUserMedia({ video: true, audio: false })
     .then(function(stream) {
         video.srcObject = stream;
         video.play();
@@ -39,7 +34,8 @@ function get_photo(){
       takepicture();
       ev.preventDefault();
     }, false);
-};
+});
+	
 
 function startup(){
 	video = document.getElementById('video');
@@ -52,15 +48,14 @@ function startup(){
 
 function clearphoto() {
     var context = canvas.getContext('2d');
-    context.fillStyle = "#ff69b4";
-    context.fillRect(0, 0, canvas.width, canvas.height);
+    context.fillStyle = "#ffffff";
+    context.fillRect(0, 0, 300, 300);
 
     var data = canvas.toDataURL('image/png');
     photo.setAttribute('src', data);
   }
 
 function takepicture() {
-	console.log("took photo");
     var context = canvas.getContext('2d');
     if (width && height) {
       canvas.width = width;

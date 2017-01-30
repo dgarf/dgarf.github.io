@@ -6,22 +6,19 @@
 	<meta charset= "utf-8" />
 	<link href= "bio.css" rel="stylesheet" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="test.js"></script>
+	<script src="scripts/biophoto.js"></script>
 </head>
 
 <body>
-	<p><span id="fancy_letter">H</span>ello. Danny Garfield is a film and media artist from Philadelphia. Looking forward– He is sure that we will all live in computers, but has mixed feelings about taking part. </p>
+	<p><span id="fancy_letter">H</span>ello. Danny Garfield is a filmmaker and artist from Philadelphia currently based in Brooklyn. He has worked on both of the US coasts and in China. 
 
+		Looking forward he is sure that we will all live in computers, but has mixed feelings about taking part. Feel free to <a href='mailto:dannyeligarfield@gmail.com'>email me</a></p>
 
-	<p>Feel free to <a href='mailto:dannyeligarfield@gmail.com'>email me</a></p>
-
-	<p>Just as Danny's childhood home, this website is a "shoes off zone" so please remove them to continue.</p>
-
-	<p> <button type="button" onclick= "get_photo()">My shoes are off.</button> </p>
+	<p>Thank you for coming. Why not take home a souvenir?</p>
 
 	 <div class="camera">
     	<video id="video">Video stream not available.</video>
-   		<button id="startbutton">Take photo</button>
+   		<button type="button" onclick= "takepicture()" id= "startbutton">Memories to Last a Lifetime</button>
  	</div>
 
  	 <canvas id="canvas"></canvas>
@@ -29,6 +26,8 @@
   	<div class="output">
     	<img id="photo" alt="The screen capture will appear in this box.">
  	</div>
+
+ 	<div><button>email photo to Danny's parents</button></div>
 
 </body>
 
