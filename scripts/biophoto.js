@@ -1,5 +1,5 @@
- var width = 900;    // We will scale the photo width to this
-  var height = 900;     // This will be computed based on the input stream
+ var width = 500;    // We will scale the photo width to this
+  var height = 500;     // This will be computed based on the input stream
 
   var streaming = false;
   var video = null;
@@ -23,7 +23,8 @@ $(document).ready(function(){
 
     video.addEventListener('canplay', function(ev){
       if (!streaming) {
-      
+       // height = video.videoHeight/(video.videoWidth/width);
+
         video.setAttribute('width', width);
         video.setAttribute('height', height);
         canvas.setAttribute('width', width);
@@ -51,7 +52,7 @@ function startup(){
 function clearphoto() {
     var context = canvas.getContext('2d');
     context.fillStyle = "#ffffff";
-    context.fillRect(0, 0, 300, 300);
+    context.fillRect(0, 0, 500, 500);
 
     var data = canvas.toDataURL('image/png');
     photo.setAttribute('src', data);
@@ -73,9 +74,18 @@ function takepicture() {
   }
 
   function stamppicture(){
-    context.font = "16px Comic Sans MS";
+    context.font = "36px Helvetica";
     context.fillStyle = "#ff69b4";
     context.textAlign = "center";
+
+    // Create gradient
+    var gradient=context.createLinearGradient(0,0,canvas.width,0);
+    gradient.addColorStop("0","magenta");
+    gradient.addColorStop("0.5","pink");
+    gradient.addColorStop("1.0","yellow");
+    // Fill with gradient
+    context.fillStyle=gradient;
+
     context.fillText("hello from sunny internet!", canvas.width/2, canvas.height/2)
       
 

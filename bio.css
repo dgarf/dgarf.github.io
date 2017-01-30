@@ -8,13 +8,6 @@ body{
 	color:#ff69b4;
 }
 
-input[type="checkbox"]{
-	width:200px;
-	height:200px;
-
-	text-align:right;
-	margin-top:10%;
-}
 
 #canvas{
 	display: none;
@@ -24,3 +17,24 @@ input[type="checkbox"]{
 	display: none;
 }
 
+.output{
+	text-align: center;
+}
+.camera{
+	text-align: center;
+}
+
+button{
+
+	text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #ff69b4}
+
+.button:active {
+  background-color: #ff69b4;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
