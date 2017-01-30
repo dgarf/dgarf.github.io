@@ -6,6 +6,8 @@
   var canvas = null;
   var photo = null;
   var startbutton = null;
+  var context = null;
+  var stamp = null;
 
 $(document).ready(function(){
 	startup();
@@ -56,15 +58,25 @@ function clearphoto() {
   }
 
 function takepicture() {
-    var context = canvas.getContext('2d');
+     context = canvas.getContext('2d');
     if (width && height) {
       canvas.width = width;
       canvas.height = height;
       context.drawImage(video, 0, 0, canvas.width, canvas.height);
-    
+      stamppicture();
+
       var data = canvas.toDataURL('image/png');
       photo.setAttribute('src', data);
     } else {
       clearphoto();
     }
   }
+
+  function stamppicture(){
+    context.font = "16px Comic Sans MS";
+    context.fillStyle = "#ff69b4";
+    context.textAlign = "center";
+    context.fillText("Hello From Sunny Internet!", canvas.width/2, canvas.height/2)
+      
+
+  };
