@@ -76,7 +76,7 @@ function takepicture() {
     context.font = "16px Comic Sans MS";
     context.fillStyle = "#ff69b4";
     context.textAlign = "center";
-    context.fillText("Hello From Sunny Internet!", canvas.width/2, canvas.height/2)
+    context.fillText("hello from sunny internet!", canvas.width/2, canvas.height/2)
       
 
   };
