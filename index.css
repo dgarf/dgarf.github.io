@@ -5,6 +5,10 @@ h1{
 
 body{
 	font-family:"helvetica";
+    position: fixed; 
+    overflow-y: scroll;
+    width: 100%;
+
 }
 
 .menu{
@@ -15,10 +19,32 @@ body{
 	font-size: 20px;
 }
 
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    width: 200px;
+
+}
+
+li{
+	 margin:0 0 20px 0;   
+	 
+}
+
 a{
 	color:#ff69b4;
 }
 
+#name{
+	width: 20%;
+	height: 20%;
+}
+
+#cats{
+	position: relative;
+	top: -300px;
+}
 
 #white_cat{
 	animation-name: slidew;
