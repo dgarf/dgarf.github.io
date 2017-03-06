@@ -38,12 +38,13 @@ a{
 	color:#ff69b4;
 }
 a:hover{
-	 box-shadow: 10px 10px 9px #ff69b4;
+	 box-shadow: 10px 10px 9px #4f4f4f;
 }
 
 #name{
 	width: 20%;
 	height: 20%;
+	margin-left: -1%;
 }
 
 #cats{
