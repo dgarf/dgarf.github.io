@@ -1,5 +1,11 @@
 /* resume stylesheet */
 
+#cv{
+	
+	margin-top: -10%;
+	margin-bottom: -10%;
+}
+
 body{
 	font-family:Helvetica;
 	margin-left: 100px
@@ -17,8 +23,8 @@ h3{
 
 #doodle{
 	position: relative;
-	top: 200px;
-    right: -120px;
+	top: 100px;
+    right: -200px;
 }
 
 

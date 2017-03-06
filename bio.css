@@ -3,6 +3,10 @@ body{
 	font-family:"helvetica";
 }
 
+#about{
+	margin-top: -10%;
+}
+
 #fancy_letter{
 	font-size:72px;
 	color:#ff69b4;

@@ -29,13 +29,17 @@ ul {
 
 li{
 	 margin:0 0 20px 0;   
+	 width: 100px;
+	 height: 30px;
 
 }
 
 a{
 	color:#ff69b4;
 }
-
+a:hover{
+	 box-shadow: 10px 10px 9px #ff69b4;
+}
 
 #name{
 	width: 20%;
