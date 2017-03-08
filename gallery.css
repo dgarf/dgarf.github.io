@@ -2,6 +2,12 @@ h1{
 	font-family:"helvetica";
 	
 }
+#gallerygif{
+	position: fixed;
+	top: -90px;
+
+
+}
 
 body{
 	font-family:"helvetica";
