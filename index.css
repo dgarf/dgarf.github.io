@@ -76,31 +76,28 @@ body{
 	height:20px;
 }
 
-#cats{
-	/*position: relative;
-	top: -300px;*/
-
-	display: block;
-	text-align: left;
-}
 
 #white_cat{
 	animation-name: slidew;
 	animation-duration: 10s;
 	animation-iteration-count: infinite;
-	z-index: -1;
 	
-	margin-left: 25%;
-	margin-bottom:0%;
+
+	margin-left: 33%;
+	position: absolute;
+	z-index: -1;
+
 }
 
 @keyframes slidew {
 	from{
-		margin-left: 100%;
+
+		transform: translate(2000px);
 		z-index: 2;
 	}
 	50%{
-		margin-left:25%;
+
+		transform: translate(0px);
 		z-index: 2;
 		
 	}
@@ -116,23 +113,22 @@ body{
 	animation-delay:5s;
 	animation-iteration-count: infinite;
 	
-	margin-left: 100%;
-	margin-bottom:0%;
+	margin-left: 33%;
+	position: absolute;
 	z-index:-1;
 
-	position: relative;
-	bottom: 435px;
+	
     
 }
 
 @keyframes slidep{
 	from{
-		margin-left: 100%;
+		transform: translate(2000px);
 		z-index: 2
 
 	}
 	50%{
-		margin-left: 25%;
+		transform: translate(0px);
 		z-index: 2;
 
 	}
@@ -141,7 +137,7 @@ body{
 	
 	}
 	to{
-		margin-left:25%;
+		z-index:-1;
 	}
 }
 
