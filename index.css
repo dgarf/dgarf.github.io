@@ -35,16 +35,40 @@ li{
 }
 
 a{
+	text-decoration: none;
 	color:#ff69b4;
 }
 a:hover{
-	 box-shadow: 10px 10px 9px #4f4f4f;
+	animation-name: link_hover;
+	animation-duration: 0.5s;
+	animation-iteration-count: 1
+}
+
+@keyframes link_hover{
+	from{
+		color:#ff69b4;
+
+	}
+	
+	to{
+		color:#FFDBED;
+	}
 }
 
 #name{
 	width: 20%;
 	height: 20%;
 	margin-left: -1%;
+}
+
+#vimeo{
+	width: 20px;
+	height: 20px;
+}
+
+#instagram{
+	width: 20px;
+	height:20px;
 }
 
 #cats{
