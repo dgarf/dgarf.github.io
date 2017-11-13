@@ -86,7 +86,7 @@ function takepicture() {
     // Fill with gradient
     context.fillStyle=gradient;
 
-    context.fillText("hello from sunny internet!", canvas.width/2, canvas.height/2)
+    context.fillText("DANNY LOVES ME", canvas.width/2, canvas.height/2)
       
 
   };

@@ -12,25 +12,34 @@ body{
 	color:#ff69b4;
 }
 
+#photobooth{
+	 position: absolute;
+     bottom: -500px;
+     width: 100%;
+}
 
 #canvas{
+	margin: 0 auto;
 	display: none;
 }
 
 #video{
+	margin: 0 auto;
 	display: none;
 }
 
 .output{
+	margin: 0 auto;
 	text-align: center;
 }
 .camera{
+	margin: 0 auto;
 	text-align: center;
 }
 
 button{
 
-	text-align: center;
+  margin: 0 auto;
   border-radius: 15px;
   box-shadow: 0 9px #999;
 }

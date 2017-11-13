@@ -59,15 +59,13 @@ body{
 	width: 20%;
 	height: 20%;
 	margin-left: -1%;
+	margin-top: 0%
 }
 
 #social{
 	position:fixed;
 	width:75%;
     bottom:0;
-
-
-	margin-left: 50%;
 
     margin-bottom: 30px;
 
@@ -128,6 +126,7 @@ body{
     
 }
 
+
 @keyframes slidep{
 	from{
 		transform: translate(2000px);
@@ -147,6 +146,4 @@ body{
 		z-index:-1;
 	}
 }
-
-
 
