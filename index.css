@@ -62,8 +62,15 @@ body{
 }
 
 #social{
-	display: block;
-	text-align: center;
+	position:fixed;
+	width:75%;
+    bottom:0;
+
+
+	margin-left: 50%;
+
+    margin-bottom: 30px;
+
 }
 
 #vimeo{
