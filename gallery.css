@@ -6,7 +6,6 @@ h1{
 	position: fixed;
 	top: -90px;
 
-
 }
 
 body{
@@ -16,6 +15,11 @@ a{
 	color:#ff69b4;
 }
 
+#gallery:hover .frame:not(:hover) {
+    opacity: .5;
+}
+
+/*
 video#bgvid { 
     position: fixed;
     top: 50%;
@@ -31,10 +35,11 @@ video#bgvid {
     transform: translateX(-50%) translateY(-50%);
     background: url(polina.jpg) no-repeat;
     background-size: cover; 
-}
+}*/
 #mark{
 
 	color:#ff69b4;
 	font-size: 24pt;
+
 
 }
