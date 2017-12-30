@@ -15,9 +15,19 @@ a{
 	color:#ff69b4;
 }
 
+#gallery{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
 #gallery:hover .frame:not(:hover) {
     opacity: .5;
 }
+
+
+
+
 
 /*
 video#bgvid { 
@@ -36,10 +46,3 @@ video#bgvid {
     background: url(polina.jpg) no-repeat;
     background-size: cover; 
 }*/
-#mark{
-
-	color:#ff69b4;
-	font-size: 24pt;
-
-
-}
