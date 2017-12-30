@@ -21,6 +21,34 @@ h3{
 	color: #ff69b4
 }
 
+ul{
+	list-style: katakana;
+}
+
+
+
+
+.column {
+    float: left;
+    width: 50%;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.top-bar{
+	position: relative;
+	top: 0;
+	width: 100%;
+	margin-bottom: 9%;
+}
+
 #doodle{
 	position: relative;
 	top: 100px;
