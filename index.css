@@ -62,6 +62,16 @@ body{
 	margin-top: 0%
 }
 
+#gallery{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#gallery:hover .frame:not(:hover) {
+    opacity: .5;
+}
+
 #social{
 	position:fixed;
 	width:75%;
@@ -81,70 +91,70 @@ body{
 	height:20px;
 }
 
+cat animation{
+	#white_cat{
+		animation-name: slidew;
+		animation-duration: 10s;
+		animation-iteration-count: infinite;
+		
 
-#white_cat{
-	animation-name: slidew;
-	animation-duration: 10s;
-	animation-iteration-count: infinite;
-	
+		margin-left: 33%;
+		position: absolute;
+		z-index: -1;
 
-	margin-left: 33%;
-	position: absolute;
-	z-index: -1;
-
-}
-
-@keyframes slidew {
-	from{
-
-		transform: translate(2000px);
-		z-index: 2;
 	}
-	50%{
 
-		transform: translate(0px);
-		z-index: 2;
+	@keyframes slidew {
+		from{
+
+			transform: translate(2000px);
+			z-index: 2;
+		}
+		50%{
+
+			transform: translate(0px);
+			z-index: 2;
+			
+		}
+		51%{
+			z-index:-1;
+		}
 		
 	}
-	51%{
+
+	#pink_cat{
+		animation-name: slidep;
+		animation-duration: 10s;
+		animation-delay:5s;
+		animation-iteration-count: infinite;
+		
+		margin-left: 33%;
+		position: absolute;
 		z-index:-1;
+
+		
+	    
 	}
-	
+
+
+	@keyframes slidep{
+		from{
+			transform: translate(2000px);
+			z-index: 2
+
+		}
+		50%{
+			transform: translate(0px);
+			z-index: 2;
+
+		}
+		51%{
+			z-index:-1;
+		
+		}
+		to{
+			z-index:-1;
+		}
+	}
+
 }
-
-#pink_cat{
-	animation-name: slidep;
-	animation-duration: 10s;
-	animation-delay:5s;
-	animation-iteration-count: infinite;
-	
-	margin-left: 33%;
-	position: absolute;
-	z-index:-1;
-
-	
-    
-}
-
-
-@keyframes slidep{
-	from{
-		transform: translate(2000px);
-		z-index: 2
-
-	}
-	50%{
-		transform: translate(0px);
-		z-index: 2;
-
-	}
-	51%{
-		z-index:-1;
-	
-	}
-	to{
-		z-index:-1;
-	}
-}
-
-
