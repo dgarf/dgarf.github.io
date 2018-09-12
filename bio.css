@@ -3,6 +3,18 @@ body{
 	font-family:"helvetica";
 }
 
+#top-bar{
+	position: relative;
+	top: 0;
+
+}
+
+#homebutton{
+	position: relative;
+	top: -250px;
+	width: 50px;
+}
+
 #about{
 	margin-top: -10%;
 }

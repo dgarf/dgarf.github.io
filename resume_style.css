@@ -25,6 +25,13 @@ ul{
 	list-style: katakana;
 }
 
+#homebutton{
+  position: relative;
+	top: 0;
+	width: 50px;
+	margin-bottom: 9%;
+}
+
 
 
 
